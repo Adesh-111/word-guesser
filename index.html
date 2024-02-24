@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="icon" href="../images/guess.png">
+  <link rel="stylesheet" href="./c.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+</head>
+<body>
+
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>Hello World.</h1>
+      <p>INTERACTIVE WORD GUESSING TOOL TAILORED FOR NOVICE CODERS AND JOB SEEKERS </p>
+    </div>
+  </div>
+  <div class="right">
+    <h5>Login</h5>
+    <div class="inputs">
+      <input type="text" placeholder="Name" id="username">
+      <br>
+      <input type="email" placeholder="E-mail" id="email">
+    </div>
+    <br><br>
+    <div>
+      <button onclick="validateLogin()" class="araa">Login</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function validateLogin() {
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+
+    if (username.trim() === '' || email.trim() === '') {
+      alert('Please enter both username and email.');
+    } else {
+      window.location.href = './next.html';
+    }
+  }
+</script>
+
+</body>
+</html>
